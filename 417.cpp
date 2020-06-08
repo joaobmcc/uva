@@ -1,19 +1,15 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main(){
-
-	string s;
-	while(cin>>s){
-		int r=(int)s[0]-'a'+1;
-		for(int i=1;i<s.size();i++){
-			if((int)s[i]>(int)s[i-1])r+=(int)s[i]-'a'+1;
-			else {
-				r=0;
-				break;
-			}
+	char aux = 'a';
+	cout<<char(aux+1)<<endl;
+	int c = 1;
+	for (int i= 1; i <= 5 ; i++){
+		string a = "";
+		for(int j = 97; j <= 122; j++){
+			a += char(j);
 		}
-		cout<<r<<endl;
 	}
 }

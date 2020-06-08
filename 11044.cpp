@@ -9,8 +9,8 @@ int main(){
 	while(count--){
 		int a,b,l1,l2;
 		cin>>a>>b;
-		a--;
-		b--;
+		a-=2;
+		b-=2;
 		l1 = a/3;
 		if(a%3!=0)l1++;
 		l2=b/3;
@@ -18,5 +18,3 @@ int main(){
 		cout<<l1*l2<<endl;
 	}
 }
-
-
